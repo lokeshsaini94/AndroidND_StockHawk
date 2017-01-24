@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?actionBarSize"
+    tools:context="com.udacity.stockhawk.ui.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.db.chart.view.LineChartView
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_height"
+            android:contentDescription="@string/description_chart"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/detail_margin"
+            android:paddingStart="@dimen/detail_margin"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/symbol"
+                style="@style/BarStyle.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="SYMBOL" />
+
+            <LinearLayout
+                style="@style/BarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/DetailTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    tools:text="Stock Name" />
+
+                <TextView
+                    android:id="@+id/price"
+                    style="@style/DetailTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    tools:text="$670.89" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/BarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/absoluteChange"
+                    style="@style/DetailTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    tools:text="+$3.45" />
+
+                <TextView
+                    android:id="@+id/percentageChange"
+                    style="@style/DetailTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    tools:text="+0.43" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

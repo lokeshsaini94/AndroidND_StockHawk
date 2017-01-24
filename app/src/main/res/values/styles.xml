@@ -1,0 +1,70 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DetailTheme" parent="AppTheme">
+        <item name="android:actionBarTheme">@style/ActionBarTheme</item>
+        <item name="android:actionBarStyle">@style/ThemeActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarTheme">@style/ActionBarTheme</item>
+        <item name="actionBarStyle">@style/ThemeActionBar</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="PercentChangeTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white_trans_cc</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BidPriceTextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="StockSymbolTextStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="DetailSymbolTextStyle" parent="BarStyle">
+        <item name="android:textColor">@color/white_trans_77</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="DetailTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white_trans_99</item>
+    </style>
+
+    <style name="BarStyle">
+        <item name="android:background">@drawable/bar_rect</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="BarStyle.Text" parent="DetailSymbolTextStyle">
+
+    </style>
+
+    <style name="ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white_trans_99</item>
+    </style>
+
+    <style name="ThemeActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/white_trans_99</item>
+    </style>
+</resources>

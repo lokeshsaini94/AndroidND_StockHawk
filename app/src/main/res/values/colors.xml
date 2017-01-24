@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="material_blue_700">#1976D2</color>
+    <color name="material_blue_500">#2196F3</color>
+    <color name="material_red">#f44336</color>
+    <color name="material_green">#4CAF50</color>
+
+    <color name="material_blue">#2196F3</color>
+    <color name="material_blue_a900">#0D47A1</color>
+    <color name="material_blue_a500">#2196F3</color>
+    <color name="material_blue_a300">#64B5F6</color>
+    <color name="material_blue_a100">#BBDEFB</color>
+
+    <color name="white_trans_cc">#ccFFFFFF</color>
+    <color name="white_trans_99">#99ffffff</color>
+    <color name="white_trans_77">#77ffffff</color>
+
+    <color name="widget_background">#77333333</color>
+
+</resources>
